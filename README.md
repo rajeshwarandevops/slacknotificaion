@@ -1,6 +1,6 @@
 # github action ---->slacknotification 
 
-1.Create remote repo .
+1.Create remote repo 
 2.commit changes in remote repo & add slack web hook secret in remote repo
  setting ------>Actions secrets and variables------->Repository secrets---->SLACK_WEBHOOK_URL ( update web hook url)
 3.git remote add origin https://github.com/rajeshwarandevops/slacknotificaion.git

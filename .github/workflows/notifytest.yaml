@@ -1,0 +1,23 @@
+name: Testing slack notification
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Show file content
+        run: cat echo.txt
+      - name: Send Slack notification
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+            --data '{"text":"🚀 Slack notification: code pushed to main branch!"}' \
+            $SLACK_WEBHOOK_URL

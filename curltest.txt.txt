@@ -1,1 +1,1 @@
-curl -X POST -H 'Content-type: application/json' --data '{"text":"Welcome to DevopsForu Channel!"}' https://hooks.slack.com/services/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
+curl -X POST -H 'Content-type: application/json' --data '{"text":"Welcome to DevopsForu Channel!"}' https://hooks.slack.com/services/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

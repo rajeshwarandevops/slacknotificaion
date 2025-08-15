@@ -1,1 +1,1 @@
-echo "This is a test commit new"
+echo "This is a test new commit "

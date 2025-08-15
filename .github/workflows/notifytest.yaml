@@ -1,14 +1,14 @@
-name: Testing slack notification
+name: Testing slack notification # Name of the workflow
 
-on:
-  push:
-    branches:
+on:                              # Defines when the workflow should run
+  push:                          # Triggers the workflow whenever code is pushed
+    branches:                    # Main Branch
       - main
 
-jobs:
-  test-job:
-    runs-on: ubuntu-latest
-    steps:
+jobs:                            # Jobs that will run in this workflow
+  test-job:                      # ID of this job.
+    runs-on: ubuntu-latest       # Environment for the job
+    steps:                       # Lists actions to perform inside the job.
       - name: Checkout repo
         uses: actions/checkout@v3
 
